@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Context context;
 
     private Button btn;
-    private HorizontalPointTitleView hptv;
+//    private HorizontalPointTitleView hptv;
     private ViewPager viewPager;
 
     private MyAdapter adapter;
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         btn = findViewById(R.id.btn);
-        hptv = findViewById(R.id.hptv);
+//        hptv = findViewById(R.id.hptv);
         viewPager = findViewById(R.id.viewPager);
     }
 
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 1; i <= 20; i++) {
             list.add("第" + i + "页");
         }
-        hptv.setData(list);
+//        hptv.setData(list);
     }
 
     private void initAdapter() {
@@ -58,27 +58,27 @@ public class MainActivity extends AppCompatActivity {
 
     private void initListener() {
 //        viewPager.addOnPageChangeListener(vpListener);
-        hptv.bindViewPager(viewPager);
+//        hptv.bindViewPager(viewPager);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                viewPager.scrollTo(500, 0);
             }
         });
-        hptv.setItemChangerListener(new HorizontalPointTitleView.ItemChangerListener() {
-
-            @Override
-            public void onItemScroll(int position) {
-                Log.i("测试", "onItemScroll = " + position);
-                viewPager.setCurrentItem(position);
-            }
-
-            @Override
-            public void onItemChanger(int position) {
-                Log.i("测试", "onItemChanger = " + position);
-                viewPager.setCurrentItem(position);
-            }
-        });
+//        hptv.setItemChangerListener(new HorizontalPointTitleView.ItemChangerListener() {
+//
+//            @Override
+//            public void onItemScroll(int position) {
+//                Log.i("测试", "onItemScroll = " + position);
+//                viewPager.setCurrentItem(position);
+//            }
+//
+//            @Override
+//            public void onItemChanger(int position) {
+//                Log.i("测试", "onItemChanger = " + position);
+//                viewPager.setCurrentItem(position);
+//            }
+//        });
     }
 
 //    private ViewPager.OnPageChangeListener vpListener = new ViewPager.OnPageChangeListener() {

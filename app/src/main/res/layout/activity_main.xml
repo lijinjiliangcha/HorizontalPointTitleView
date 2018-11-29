@@ -24,23 +24,23 @@
             android:layout_height="wrap_content"
             android:text="测试" />
 
-        <com.example.administrator.horizontalpointtitleview.HorizontalPointTitleView
-            android:id="@+id/hptv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="60dp"
-            android:background="#33000000"
-            app:lineColor="#fff"
-            app:lineSize="2dp"
-            app:maxPointSize="40px"
-            app:maxTextSize="18sp"
-            app:minPointSize="20px"
-            app:minTextSize="13sp"
-            app:pointColor="#fff"
-            app:ringStrokeWidth="2px"
-            app:space="2dp"
-            app:textColor="#fff" />
+        <!--<PointTabView-->
+            <!--android:id="@+id/hptv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginBottom="60dp"-->
+            <!--android:background="#33000000"-->
+            <!--app:lineColor="#fff"-->
+            <!--app:lineSize="2dp"-->
+            <!--app:maxPointSize="40px"-->
+            <!--app:maxTextSize="18sp"-->
+            <!--app:minPointSize="20px"-->
+            <!--app:minTextSize="13sp"-->
+            <!--app:pointColor="#fff"-->
+            <!--app:ringStrokeWidth="2px"-->
+            <!--app:space="2dp"-->
+            <!--app:textColor="#fff" />-->
 
     </RelativeLayout>
 

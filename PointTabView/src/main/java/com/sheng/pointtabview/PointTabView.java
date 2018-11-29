@@ -1,4 +1,4 @@
-package com.example.administrator.horizontalpointtitleview;
+package com.sheng.pointtabview;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
@@ -22,7 +22,7 @@ import java.util.List;
  * Created by Administrator on 2018/11/21.
  */
 
-public class HorizontalPointTitleView extends View {
+public class PointTabView extends View {
 
     private final boolean DEBUG = true;
     //    private String[] datas = {"标题一", "标题二", "标题三", "标题四", "标题五", "标题六"};
@@ -115,30 +115,30 @@ public class HorizontalPointTitleView extends View {
     //按下的时间戳
     private long touchTime;
 
-    public HorizontalPointTitleView(Context context) {
+    public PointTabView(Context context) {
         this(context, null);
     }
 
-    public HorizontalPointTitleView(Context context, @Nullable AttributeSet attrs) {
+    public PointTabView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public HorizontalPointTitleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public PointTabView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         //获取自定义属性
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.HorizontalPointTitleView, defStyleAttr, 0);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.PointTabView, defStyleAttr, 0);
 
-        textColor = typedArray.getColor(R.styleable.HorizontalPointTitleView_textColor, DEFAULT_TEXT_COLOR);
-        minTextSize = typedArray.getDimensionPixelSize(R.styleable.HorizontalPointTitleView_minTextSize, DEFAULT_MIN_TEXT_SIZE);
-        maxTextSize = typedArray.getDimensionPixelSize(R.styleable.HorizontalPointTitleView_maxTextSize, DEFAULT_MAX_TEXT_SIZE);
-        pointColor = typedArray.getColor(R.styleable.HorizontalPointTitleView_pointColor, DEFAULT_POINT_COLOR);
-        minPointSize = typedArray.getDimensionPixelSize(R.styleable.HorizontalPointTitleView_minPointSize, DEFAULT_MIN_POINT_SIZE);
-        maxPointSize = typedArray.getDimensionPixelSize(R.styleable.HorizontalPointTitleView_maxPointSize, DEFAULT_MAX_POINT_SIZE);
-        ringStrokeWidth = typedArray.getDimensionPixelSize(R.styleable.HorizontalPointTitleView_ringStrokeWidth, DEFAULT_RING_STROKE_WIDTH);
-        lineColor = typedArray.getColor(R.styleable.HorizontalPointTitleView_lineColor, DEFAULT_LINE_COLOR);
-        lineSize = typedArray.getDimensionPixelSize(R.styleable.HorizontalPointTitleView_lineSize, DEFAULT_LINE_SIZE);
-        space = typedArray.getDimensionPixelSize(R.styleable.HorizontalPointTitleView_space, DEFAULT_SPACE);
+        textColor = typedArray.getColor(R.styleable.PointTabView_textColor, DEFAULT_TEXT_COLOR);
+        minTextSize = typedArray.getDimensionPixelSize(R.styleable.PointTabView_minTextSize, DEFAULT_MIN_TEXT_SIZE);
+        maxTextSize = typedArray.getDimensionPixelSize(R.styleable.PointTabView_maxTextSize, DEFAULT_MAX_TEXT_SIZE);
+        pointColor = typedArray.getColor(R.styleable.PointTabView_pointColor, DEFAULT_POINT_COLOR);
+        minPointSize = typedArray.getDimensionPixelSize(R.styleable.PointTabView_minPointSize, DEFAULT_MIN_POINT_SIZE);
+        maxPointSize = typedArray.getDimensionPixelSize(R.styleable.PointTabView_maxPointSize, DEFAULT_MAX_POINT_SIZE);
+        ringStrokeWidth = typedArray.getDimensionPixelSize(R.styleable.PointTabView_ringStrokeWidth, DEFAULT_RING_STROKE_WIDTH);
+        lineColor = typedArray.getColor(R.styleable.PointTabView_lineColor, DEFAULT_LINE_COLOR);
+        lineSize = typedArray.getDimensionPixelSize(R.styleable.PointTabView_lineSize, DEFAULT_LINE_SIZE);
+        space = typedArray.getDimensionPixelSize(R.styleable.PointTabView_space, DEFAULT_SPACE);
 
         log("textColor = " + textColor + "");
         log("minTextSize = " + minTextSize + "");
